@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'mzama_palindrome'
 
 get '/' do
     @title = 'Home'
@@ -16,4 +17,10 @@ end
 get '/palindrome' do
     @title = 'Palindrome Detector'
     erb :palindrome, :layout => :default_page
+end
+
+post '/check' do
+    #Check if the submission is a palindrome
+    @phrase = params[:phrase]
+    erb :result, :layout => :default_page
 end

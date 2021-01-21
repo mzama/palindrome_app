@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra', '2.1.0'
 gem 'rerun', '0.13.1'
+gem 'mzama_palindrome', '1.0.0'
 
 group :test do
   gem 'minitest',           '5.14.2'
